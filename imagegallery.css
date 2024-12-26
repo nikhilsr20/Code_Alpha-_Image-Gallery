@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.search-bar{
+ 
+    margin-top: 20px;
+    width: fit-content;
+    border: solid black 2px;
+    border-radius: 30px;
+    padding-left: 20px;
+    box-shadow: 1px 2px 1px rgb(166, 57, 79);
+    
+}
+#searchbtn{
+    cursor: pointer;
+   margin-left: 20px;
+    
+}
+
+#search6 {
+   
+width: 500px;
+height: 50px;
+border-radius: 40px;
+
+border:none;
+background-color: transparent;
+cursor: pointer;
+
+
+
+}
+
+#search6:focus{
+    border: none ;
+    outline: none;
+}
+
+.ul{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 330px;
+    
+}
+
+.home{
+    margin-right: 40px;
+    color: rgb(112, 72, 72);
+    cursor: pointer;
+}
+.home:hover{
+    color: black;
+}
+.login{
+    margin-left: 40px;
+    color: rgb(112, 72, 72);
+    cursor: pointer;
+}
+.login:hover{
+    color: black;
+}
+.explore:hover{
+color:rgb(112, 72, 72) ;
+cursor: pointer;
+}
+.explore-items{
+    width: 150px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: rgb(186, 150, 117);
+    text-align: center;
+    color: black;
+    font-size: small;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+.explore-items{
+    cursor: pointer;
+}
+.category{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.category:hover{
+    color: white;
+    cursor: pointer;
+    
+}
+#darkmode{
+    margin-top: 45px;
+    /* margin-left: 40px; */
+}
+.dark{
+    cursor: pointer;
+}
+
+.body{
+  background-size: 1600px 500px ;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1729505622656-6da75375c3a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8');
+}
+hr{
+    background-color: black;
+}
+@media screen {
+    
+}.tagline{
+    margin-top: 350px;
+    margin-left: 300px;
+    color: white;
+    font-size: 50px;
+}
