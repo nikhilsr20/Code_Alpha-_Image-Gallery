@@ -1,4 +1,5 @@
 *{
+  
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
@@ -11,20 +12,23 @@
     top: 0;
     left: 0;
     right: 0;
+    transition: 1s ease;
+    z-index: 100;
 }
 .search-bar{
  
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: fit-content;
-    border: solid black 2px;
+    border: solid black 3px;
     border-radius: 30px;
     padding-left: 20px;
-    box-shadow: 1px 2px 1px rgb(166, 57, 79);
+    /* box-shadow: 5px 10px 5px #fffefe; */
     
 }
 #searchbtn{
     cursor: pointer;
-   margin-left: 20px;
+   margin-left: 16px;
     
 }
 
@@ -77,30 +81,30 @@ cursor: pointer;
 .explore-items{
     width: 150px;
     border: solid black 1px;
-    border-radius: 10px;
-    background-color: rgb(186, 150, 117);
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 4px;
+    background-color: rgb(234, 230, 227);
     text-align: center;
     color: black;
     font-size: small;
     position: absolute;
     z-index: 1;
-    cursor: pointer;
+    
 }
-.explore-items{
-    cursor: pointer;
-}
+
 .category{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
 .category:hover{
-    color: white;
+    color: rgb(103, 98, 98);
     cursor: pointer;
     
 }
 #darkmode{
     margin-top: 45px;
-    /* margin-left: 40px; */
+    
 }
 .dark{
     cursor: pointer;
@@ -110,15 +114,80 @@ cursor: pointer;
   background-size: 1600px 500px ;
     background-repeat: no-repeat;
     background-image: url('https://images.unsplash.com/photo-1729505622656-6da75375c3a2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8');
-}
-hr{
-    background-color: black;
-}
-@media screen {
+
     
-}.tagline{
-    margin-top: 350px;
+
+}
+
+
+.tagline{
+    margin-top: 320px;
     margin-left: 300px;
-    color: white;
+    color: rgb(235, 222, 222);
     font-size: 50px;
+   position: relative;
+}
+.heading {
+    top: 500px;
+    left: 10px;
+    position: absolute;
+    font-size: 20px;
+    font: 1em sans-serif;
+    display: flex;
+    cursor: pointer;
+   
+}
+
+
+.tex{
+ color: rgb(52, 49, 49);
+ cursor: pointer;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.head{
+    margin-top: 17px;
+}
+.feature {
+    margin-left: 970px;
+    margin-top: 16px;
+    width: fit-content;
+    padding: 14px;
+    border: solid rgb(92, 89, 89) 1px;
+    border-radius: 5px;
+}
+
+.feature:hover {
+    background-color: rgb(254, 255, 255);
+    border: solid rgb(92, 89, 89) 2px;
+}
+
+#cheveron {
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+.first:hover #cheveron {
+    transform: rotate(180deg); 
+}
+.others{
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.other:hover{
+    background-color: rgb(236, 240, 240);
+}
+.image-container{
+    margin-left: 10px;
+    top: 600px;
+    position: absolute;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+
+}
+.img{
+   
+   
+  cursor: pointer;
+   
 }

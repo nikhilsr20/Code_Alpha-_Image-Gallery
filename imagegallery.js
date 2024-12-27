@@ -1,26 +1,47 @@
 
-// const apiKey = 'wNpzAvLhgJwe0C7SvTzasVOMA9LiRtBxcLvoDbzwviqGiiScYlhnZmhq'; 
-// const endpoint = 'https://api.pexels.com/v1/search?query=mountains&per_page=10&page=1';
 
+async function fetchPhotos(endpoint, apiKey) {
+    try {
+        const response = await fetch(endpoint, {
+            method: 'GET',
+            headers: {
+                Authorization: `Bearer ${apiKey}`, 
+            },
+        });
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        console.log(data.photos[0].src.original);
+        data.photos.slice(0, 10).map((photo, i) => {
+           
+            const img = document.createElement('img');
+            
+            
+            img.setAttribute('src', photo.src.original);
+            img.className = `img${i}`;
+        
+            img.style.width = i % 2 === 0 ? "300px" : "400px";
+            img.style.height = i % 2 === 0 ? "500px" : "600px";
+            img.style.marginTop = i % 2 === 0 ? "60px" : "20px";
+            img.style.borderRadius = "10px";
+            img.style.cursor = "pointer";
+           
+            document.querySelector(".image-container").appendChild(img);
+        });
+      
 
-// fetch(endpoint, {
-//     method: 'GET',
-//     headers: {
-//         Authorization: apiKey
-//     }
-// })
-//     .then(response => {
-//         if (!response.ok) {
-//             throw new Error(`HTTP error! Status: ${response.status}`);
-//         }
-//         return response.json();
-//     })
-//     .then(data => {
-//         console.log(data);
-//     })
-//     .catch(error => {
-//         console.error('Error fetching data:', error);
-//     });
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
+}
+
+const apiKey = 'wNpzAvLhgJwe0C7SvTzasVOMA9LiRtBxcLvoDbzwviqGiiScYlhnZmhq'; 
+const endpoint = 'https://api.pexels.com/v1/search?query=mountains&per_page=10&page=1';
+
+fetchPhotos(endpoint, apiKey);
 
 
 
@@ -40,16 +61,16 @@
 
     window.addEventListener('scroll', () => {
         const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    
-        if (currentScrollPosition < lastScrollPosition) {
-           
-            document.querySelector(".body").style.opacity = "1";
+        
+        if (currentScrollPosition == 0) {
+          document.querySelector(".nav").style.backgroundColor="transparent"
+          
         } else {
-            
-            document.querySelector(".body").style.opacity = "0.4"; 
+          document.querySelector(".nav").style.backgroundColor="white"
+          
         }
     
-        lastScrollPosition = currentScrollPosition <= 0 ? 0 : currentScrollPosition;
+        
     });
    
     let a = "Capture-Memories, Display, Art, Inspire, Explore.";
@@ -65,3 +86,15 @@
         }
     }, 100); 
     
+    let trend=document.querySelector(".feature");
+    trend.addEventListener("mouseover",()=>{
+        
+        let exploreItems = document.querySelector(".others");
+        exploreItems.style.display = "block";
+    })
+    trend.addEventListener("mouseout",()=>{
+      
+        let exploreItems = document.querySelector(".others");
+        exploreItems.style.display = "none";
+    })
+ 
