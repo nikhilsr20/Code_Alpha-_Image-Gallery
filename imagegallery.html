@@ -18,7 +18,7 @@
                 <i id="seachbtn" class="fa-solid fa-magnifying-glass fa-2xl"></i>
                 <input  id="search6" placeholder=" What type of images you want to see?">
         </div>
-        <div class="dark">
+        <div class="dark" onclick="darkmode()">
             <i class="fa-solid fa-sun fa-xl" style="color: #110d0d;"></i>
         <i id="darkmode" class="fa-solid fa-toggle-off fa-2xl" style="color: #482424;"></i>
     </div>
@@ -63,7 +63,7 @@
 
         <div class="texts">
             <h1 class="tagline" ></h1>
-            
+
         </div>
 
         
@@ -86,7 +86,86 @@
     </div>
     
     <div class="image-container">
-           
+      <div class="big">
+           <img class="odd" id="1" src="https://images.unsplash.com/photo-1731330269319-0f053cd5d74b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt="" onclick="copy('1')">
+           <h1 class="uper" >Click to copy the image address</h1>
+          </div>
+          <div class="big">
+            <img class="even"  id="2"src="https://images.unsplash.com/photo-1731331131233-4f73c93ae693?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('2')">
+            <h1 class="uper" >Click to copy the image address</h1>
+          </div>
+           <div class="big">
+
+             <img  class="odd" id="3"src="https://images.unsplash.com/photo-1732287931034-c4cc1b06de6a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt=""  onclick="copy('3')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+
+             <img class="even" id="4"src="https://images.unsplash.com/photo-1733235015107-5ab658892359?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('4')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+
+             <img  class="odd" id="5"src="https://images.unsplash.com/photo-1733290323627-688325e70f89?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('5')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+
+             <img class="even" id="6" src="https://images.unsplash.com/photo-1734268486202-7e85b12a7fa2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('6')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+
+             <img  class="odd" id="7"  src="https://images.unsplash.com/photo-1733418750591-6b47d7614c7b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('7')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+             <img class="even" id="8"  src="https://plus.unsplash.com/premium_photo-1661311816510-2d6f0573e634?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('8')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+           <div class="big">
+
+             <img  class="odd" id="9"  src="https://images.unsplash.com/photo-1734216736201-bb39d6c204c5?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('9')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+           <div class="big">
+
+             <img class="even"  id="10" src="https://plus.unsplash.com/premium_photo-1733514692327-967cdc0dc987?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('10')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+           <div class="big">
+
+
+             <img  class="odd"id="11"  src="https://images.unsplash.com/photo-1732951340728-d8b726561d50?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3N3x8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('11')">
+             <h1 class="uper" >Click to copy the image address</h1>
+           </div>
+           <div class="big">
+
+             <img class="even" id="12" src="https://images.unsplash.com/photo-1733181743510-3af9092af143?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5NHx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('12')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+           <div class="big">
+
+             <img  class="odd" id="13" src="https://images.unsplash.com/photo-1734192279506-45e56af5575f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5NXx8fGVufDB8fHx8fA%3D%3D" alt=""  onclick="copy('13')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+           <div class="big">
+
+             <img class="even" id="14" src="https://images.unsplash.com/photo-1606916929342-fef8a9b43f25?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDZ8fHxlbnwwfHx8fHw%3D" alt=""  onclick="copy('14')">
+             <h1 class="uper" >Click to copy the image address</h1>
+
+           </div>
+
     </div>
 
 
